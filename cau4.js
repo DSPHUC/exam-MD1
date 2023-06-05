@@ -21,13 +21,12 @@ this.toString = function () {
 }
 }
 
-let objAnimal1 = new Animal("Elenphant", "45.6");
-let arrayString = objAnimal1.toString();
-let objAnimal2 = new Animal(name, weight);
-objAnimal1.setName(Mouse);
-let arr = new Array();
-Animal.push(objAnimal1);
-Animal.push(new Animal("Elenphant", "45.6"), new Animal(name, weight));
-arr.forEach(element => {
+let elenphant = new Animal("Elenphant", "45.6");
+let arrayString = elenphant.toString();
+// elenphant.setName("Mouse");
+let arrs = new Array();
+arrs.push(elenphant);
+arrs.push(new Animal("Mouse",));
+arrs.forEach(element => {
     console.log(element.toString());
 });
